@@ -16,7 +16,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <div id="app">
         <h1>{{message}}</h1>
         <ul>
-            <li v-for="(mail, index) in mails" v-if="mails.length === 10 " >{{ mails[index] }}</li>
+            <div v-for="(mail, index) in mails">
+                <li  v-if="mails.length === 10 " >{{ mails[index] }}</li>
+            </div>
         </ul>
     </div>
 
